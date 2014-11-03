@@ -1,4 +1,5 @@
 ActiveAdmin.register Article do
+  permit_params :article_url
 
 
   # See permitted parameters documentation:
