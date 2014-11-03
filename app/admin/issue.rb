@@ -1,4 +1,5 @@
 ActiveAdmin.register Issue do
+  permit_params :topic
 
 
   # See permitted parameters documentation:
