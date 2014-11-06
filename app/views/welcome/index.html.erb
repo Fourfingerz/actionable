@@ -1,17 +1,16 @@
 <h1>A Cause You Care About</h1>
-
-<%= form_for @issue do |f| %>
-	<%= f.select("article", "issue_id", Issue.all.collect {|i| [i.topic]}, {include_blank: true}) %>
-	<%= f.submit nil %>
-	<% link_to 'Issues', issues_path %>
-<% end %>
-
-
-
-
-
-<!-- 
-
-"<select id=\"article_issue_id\" name=\"article[issue_id]\"><option value=\"\"></option>\n<option value=\"Climate Change\">Climate Change</option></select>" 
-
--->
+ 
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"> 
+  	Issues 
+  	<span class="caret"></span>
+  </button>
+  
+  <ul class="dropdown-menu" role="menu">
+    <% @issues.each do |i| %>
+      <li>
+        <%= link_to i.topic, i %>
+      </li>
+    <% end %>
+  </ul>
+</div>
