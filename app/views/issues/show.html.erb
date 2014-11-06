@@ -1,4 +1,9 @@
-<p class="lead">Today's Content on <%= @issue.articles %></p>
+<p class="lead">Today's Content on <%= @issue.topic %></p>
 
+<% @articleurl = @issue.articles.collect(&:article_url) %>
+<%= @articleurl[0] %>
 
-<!-- Relational Problem BELONGS TO -->
+</br>
+</br>
+<% @projecturl = @issue.projects.collect(&:project_url) %>
+<%= @projecturl[0] %>

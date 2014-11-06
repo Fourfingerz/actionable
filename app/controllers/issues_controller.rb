@@ -6,7 +6,7 @@ class IssuesController < ApplicationController
   end
 
   def show
-  	@issues = Issue.find(params[:id])
+  	@issue = Issue.find(params[:id])
   end
   
 end
