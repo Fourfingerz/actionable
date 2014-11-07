@@ -10,5 +10,19 @@
     <%= link_to "Actionable", defined?(root_path) ? root_path : "#", class: "navbar-brand" %>
   </div>
 
+<ul class="nav nav-pills" role="tablist">
+  <li role="presentation" class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+      Issue <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu" role="menu">
+ <% Issue.all.each do |c| %>
+  <li class="snavitem <%= is_active?(issue_path(c)) %>">
+    <%= link_to "" + c.topic, issue_path(c) %>
+  </li>
+ <% end %>
+    </ul>
+  </li>
+</ul>
   
 </nav>

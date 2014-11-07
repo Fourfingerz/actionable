@@ -1,16 +1,2 @@
 <h1>A Cause You Care About</h1>
  
-<div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"> 
-  	Issues 
-  	<span class="caret"></span>
-  </button>
-  
-  <ul class="dropdown-menu" role="menu">
-    <% @issues.each do |i| %>
-      <li>
-        <%= link_to i.topic, i %>
-      </li>
-    <% end %>
-  </ul>
-</div>
