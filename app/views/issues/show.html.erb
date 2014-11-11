@@ -2,8 +2,10 @@
 
 <% @articleurl = @issue.articles.collect(&:article_url) %>
 <%= @articleurl[0] %>
+
 </br>
 </br>
+
 <% @projecturl = @issue.projects.collect(&:project_url) %>
 
 <%= @projecturl[0] %>

@@ -94,6 +94,7 @@ GEM
     formtastic (3.0.0)
       actionpack (>= 3.2.13)
     formtastic_i18n (0.1.1)
+    grabz_it (0.0.4)
     has_scope (0.6.0.rc)
       actionpack (>= 3.2, < 5)
       activesupport (>= 3.2, < 5)
@@ -328,6 +329,7 @@ DEPENDENCIES
   bundler
   coffee-rails (~> 4.0.0)
   devise!
+  grabz_it
   jbuilder (~> 2.0)
   jquery-rails
   pg
