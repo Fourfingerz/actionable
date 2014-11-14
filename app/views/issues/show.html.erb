@@ -1,11 +1,42 @@
-<p class="lead">Today's Content on <%= @issue.topic %></p>
+<div class="row">
+	<div class="col-md-3"></div>
+	<div class="col-md-9">
+	<h2 class="lead">On <%= @issue.topic %></h2>
 
-<% @articleurl = @issue.articles.collect(&:article_url) %>
-<%= @articleurl[0] %>
+	<h3> Today's Issue </h3>
+	<% @articleurl = @issue.articles.collect(&:article_url) %>
+	<% @articletitle = @issue.articles.collect(&:title) %>
+	<% @articleauthor = @issue.articles.collect(&:author) %>
+	<% @articlelead = @issue.articles.collect(&:lead) %>
+	<% @articlepublication = @issue.articles.collect(&:publication) %>
+	<% @articledate = @issue.articles.collect(&:published_on) %>
 
-</br>
-</br>
+	<%= @articletitle[0] %>
+	</br>
+	<%= @articleurl[0] %>
+	</br>
+	<%= @articleauthor[0] %>
+	</br>
+	<%= @articlelead[0] %>
+	</br>
+	<%= @articlepublication[0] %>
+	</br>
+	<%= @articledate[0] %>
 
-<% @projecturl = @issue.projects.collect(&:project_url) %>
+	</br>
+	</br>
 
-<%= @projecturl[0] %>
+	<h3> Today's Action </h3>
+	<% @projecturl = @issue.projects.collect(&:project_url) %>
+	<% @projecttitle = @issue.projects.collect(&:project_title) %>
+	<% @projectorg = @issue.projects.collect(&:organization) %>
+	<% @projectsumm = @issue.projects.collect(&:summary) %>
+	<%= @projecttitle[0] %>
+	</br>
+	<%= @projecturl[0] %>
+	</br>
+	<%= @projectorg[0] %>
+	</br>
+	<%= @projectsumm[0] %>
+	</div>
+</div>

@@ -16,3 +16,7 @@
 //= require bootstrap
 
 //= require_tree .
+
+$(function() {
+    $( "#main_menu" ).draggable();
+});  
