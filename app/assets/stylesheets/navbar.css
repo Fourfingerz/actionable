@@ -21,13 +21,9 @@ body {
 	position: relative;
 	top: -90;
 	left: 0;
-	background: url("japen-red-cross-2.jpg");
+	background: url("http://i.imgur.com/IprJIhQ.jpg");
 	background-size: contain;
 	background-repeat: no-repeat;
-}
-
-#homebg h1 {
-
 }
 
 #pagebg img {

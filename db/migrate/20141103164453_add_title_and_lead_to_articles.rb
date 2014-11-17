@@ -5,6 +5,5 @@ class AddTitleAndLeadToArticles < ActiveRecord::Migration
   	add_column :articles, :lead, :text
   	add_column :articles, :publication, :string
   	add_column :articles, :published_on, :datetime
-
   end
 end

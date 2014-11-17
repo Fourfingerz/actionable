@@ -39,7 +39,8 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'bundler'
-gem 'grabz_it'
+gem 'carrierwave'
+
 
 group :development do
   gem 'better_errors'
