@@ -1,5 +1,6 @@
 <html>
 	<head> 
+		<% @issueimage = @issue.imageurl %>
 		<% @articletitle = @issue.articles.collect(&:title) %>
 		<% @articleurl = @issue.articles.collect(&:article_url) %>
 		<% @articletitle = @issue.articles.collect(&:title) %>
@@ -13,7 +14,7 @@
 		<% @projectsumm = @issue.projects.collect(&:summary) %>
 	<style>
 	#jumbo {
-	background-image: url("http://i.imgur.com/tA6LHHU.jpg"); no-repeat left center fixed;
+	background-image: url(<%= @issueimage %>); no-repeat left center fixed;
 	}
 	</style>
 	<link type="text/css" rel="stylesheet" href="/viewpage.css">
@@ -23,8 +24,8 @@
  	<body>
  	<!-- Jumbotron Header -->
 			<div id="jumbo" class="container-fluid">
-				<div class="container">
-					<div id="jumbo-text-background" class="col-md-7">
+				<div class="row"><!-- Article Content -->
+					<div id="jumbo-text-background" class="col-md-4">
 						<div id="jumbo-text">
 							<h2 class="issue">Today's <%= @issue.topic %> Issue</h2>
 							<a href="<%= @articleurl[0] %>" class="title" ><%= @articletitle[0] %></a>
@@ -32,28 +33,23 @@
 					    	<%= @articleauthor[0] %> of 
 					    	<%= @articlepublication[0] %>  
 					    	</h3>
+					    	<p class="article-date"><%= @articledate[0] %></p>
+					    	<!-- ADD .to_date back into @articledate when complete -->
+							<p class="article-text"><%= @articlelead[0] %></p>
 					    </div>
-					</div>
-					<div class="row">
-						<div class="col-md6">
-						
-						</div>
-					</div>
+					</div>			
+			    </div>
+			    <div id="row"><!-- Issue Facts -->
+			    	<div class="col-md-3">
+			    		<!-- Fact Box -->Facts Go Here
+			    	</div>
 			    </div>
 			</div>
-	<!-- End of Jumbotron Header -->
+			<!-- End of Jumbotron Header -->
 
-	<!-- Main Page Body -->
-	<div id="main-page-wrapper">	
-		<div class="row">
-			
-				<div id= "article-summary" class="col-md-9">	
-				<p id="article-date"><%= @articledate[0].to_date %></p>
-				<p id="article-text"><%= @articlelead[0] %></p>
-				</br>
-				</div>
-			
-		</div>
+			<!-- Main Page Body -->
+			<div id="main-page-wrapper">	
+		
 				
 				<div class="row">
 

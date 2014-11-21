@@ -1,5 +1,5 @@
 ActiveAdmin.register Issue do
-  permit_params :topic
+  permit_params :topic, :imageurl, :imageattribution
 
 
   # See permitted parameters documentation:

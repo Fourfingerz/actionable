@@ -5,50 +5,64 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
-    height: 600px;
+    height: 700px;
 }
 
-#jumbo > .container > #jumbo-text-background {
+#jumbo > .row > #jumbo-text-background {
 	background-color: black;
 	opacity: 0.85;
-	height: 150px
- 	position: absolute;
-  	left: -50px;
+	height: auto;
+ 	background: absolute;
+  	left: 275px;
+  	right: 20px;
+  	position: absolute;
+  	top: 10px;
 }
 
-#jumbo > .container > #jumbo-text-background > #jumbo-text > .issue {
-	font: 32px Arial;
+#jumbo > .row > #jumbo-text-background > #jumbo-text > .issue {
+	font: 12px Arial;
 	font-style: bold;
 	color: orange;
 }
 
-#jumbo > .container > #jumbo-text-background > #jumbo-text > .title {
-	font-family: "Lucida Sans Unicode", sans-serif; 
-	font-size: 18px;
+#jumbo > .row > #jumbo-text-background > #jumbo-text > .title {
+	font-family: Impact; 
+	font-size: 24px;
 	color: white;
 }
 
-#jumbo > .container > #jumbo-text-background > #jumbo-text > .publication {
+#jumbo > .row > #jumbo-text-background > #jumbo-text > .publication {
 	font-family: Times;
-	font-style: italic;
 	font-size: 12px;
 	color: grey;
 }
 
-#main-page-wrapper {
-	margin-left: 275px;
+#jumbo > .row > #jumbo-text-background > #jumbo-text > .article-text {
+	font-family: Arial;
+	font-size: 14px;
+}
+
+#jumbo > .row > #jumbo-text-background > #jumbo-text > .article-date {
+	font-family: Arial;
+	font-size: 10px;
 }
 
 #article-text {
 	font-family: Georgia;
-	font-size: 18px;
+	font-size: 12px;
 }
 
 #article-date {
 	font-family: Georgia;
-	font-size: 16px;
+	font-size: 14px;
+}
+
+#main-page-wrapper {
+	position: absolute;
+	left: 275px;
 }
 
 #thumb {
 	background-size: 100px 80px;
 }
+
