@@ -4,6 +4,7 @@
 		<% @articletitle = @issue.articles.collect(&:title) %>
 		<% @articleurl = @issue.articles.collect(&:article_url) %>
 		<% @articletitle = @issue.articles.collect(&:title) %>
+		<% @articleimage = @issue.articles.collect(&:imageurl) %>
 		<% @articleauthor = @issue.articles.collect(&:author) %>
 		<% @articlelead = @issue.articles.collect(&:lead) %>
 		<% @articlepublication = @issue.articles.collect(&:publication) %>
@@ -12,62 +13,85 @@
 		<% @projecttitle = @issue.projects.collect(&:project_title) %>
 		<% @projectorg = @issue.projects.collect(&:organization) %>
 		<% @projectsumm = @issue.projects.collect(&:summary) %>
-	<style>
-	#jumbo {
-	background-image: url(<%= @issueimage %>); no-repeat left center fixed;
-	}
-	</style>
-	<link type="text/css" rel="stylesheet" href="/viewpage.css">
+		<% @projectimage = @issue.projects.collect(&:imageurl) %>
+		<style>
+			body > .jumbotron {
+		background-image: url(<%= @issueimage %>); no-repeat left center fixed;
+			}
+		</style>
+		<link type="text/css" rel="stylesheet" href="/viewpage.css">
  	</head>
 
 
  	<body>
- 	<!-- Jumbotron Header -->
-			<div id="jumbo" class="container-fluid">
-				<div class="row"><!-- Article Content -->
-					<div id="jumbo-text-background" class="col-md-4">
-						<div id="jumbo-text">
-							<h2 class="issue">Today's <%= @issue.topic %> Issue</h2>
-							<a href="<%= @articleurl[0] %>" class="title" ><%= @articletitle[0] %></a>
-					    	<h3 class="publication">by 
-					    	<%= @articleauthor[0] %> of 
-					    	<%= @articlepublication[0] %>  
-					    	</h3>
-					    	<p class="article-date"><%= @articledate[0] %></p>
-					    	<!-- ADD .to_date back into @articledate when complete -->
-							<p class="article-text"><%= @articlelead[0] %></p>
-					    </div>
-					</div>			
-			    </div>
-			    <div id="row"><!-- Issue Facts -->
-			    	<div class="col-md-3">
-			    		<!-- Fact Box -->Facts Go Here
-			    	</div>
-			    </div>
-			</div>
-			<!-- End of Jumbotron Header -->
 
-			<!-- Main Page Body -->
-			<div id="main-page-wrapper">	
-		
-				
-				<div class="row">
-
-						<div class="col-md-6">
-						<h3> Become Actionable Today</h3>
-							<%= @projecttitle[0] %>
-							<img src=http://i.imgur.com/mzVAe3M.jpg class="img-rounded" id="projectthumb">
-							</br>
-							<%= @projecturl[0] %>
-							</br>
-							<%= @projectorg[0] %>
-							</br>
-							<%= @projectsumm[0] %>
-						</div>
-				</div>
+		<div id="jumbotron" class="jumbotron">
+			<div class="container">
+				<h1 id="issue"><%= @issue.topic %></h1>
+				<h1 id="chevron"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></h1>
 			</div>
 		</div>
-	</div>
 
+		<div id="jumbo-text-background" class="col-md-10 col-md-offset-1"><!-- Article Content -->
+					<div id="jumbo-text">
+								</br>
+								</br>
+								</br>
+								</br>
+								</br>
+								</br>
+								<hr color="black" width="100%">
+								<h2>In Recent News</h2>
+								<a href="<%= @articleurl[0] %>" class="title" ><%= @articletitle[0] %></a>
+								<hr color="black" width="100%">
+								
+								<!-- ADD .to_date back into @articledate when complete -->
+								</br>
+								</br>
+								</br>
+								</br>
+								</br>
+								<img src=<%= @articleimage[0] %> id="articlethumb" >
+								</br>
+								</br>
+								</br>
+								</br>
+								<p class="article-text"><%= @articlelead[0] %></p>
+								</br>
+								</br>
+								<h3 class="publication">by 
+								<%= @articleauthor[0] %> of 
+								<%= @articlepublication[0] %>  
+								</h3>
+								<p class="article-date"><%= @articledate[0] %></p>
+						
+
+					</div>
+				</div>	
+
+
+		<div id="issue-project" class="col-md-12"><!-- Project Content -->	<div id="container" class="col-md-6 col-md-offset-3">
+					<div id="project-text">
+					</br>
+					</br>
+					</br>
+					</br>
+						
+						<h2> Become Actionable Today</h2>
+						</br>
+						</br>
+						</br>
+						</br>
+						<a href="<%= @projecturl[0] %>" id="project-title"><%= @projecttitle[0] %></a>
+						</br>
+						</br>
+						<img src=<%= @projectimage[0] %> id="projectthumb">
+						</br>
+						<h3 id="project-org"<%= @projectorg[0] %>></h3>
+						</br>
+						<p id="project-text"><%= @projectsumm[0] %></p>
+					</div>
+				</div>
+			</div>
 	</body>
 </html>

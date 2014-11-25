@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141117210033) do
+ActiveRecord::Schema.define(version: 20141123172515) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -59,7 +59,7 @@ ActiveRecord::Schema.define(version: 20141117210033) do
     t.text     "lead"
     t.string   "publication"
     t.datetime "published_on"
-    t.string   "picture"
+    t.string   "imageurl"
   end
 
   add_index "articles", ["issue_id"], name: "index_articles_on_issue_id", using: :btree
@@ -70,6 +70,9 @@ ActiveRecord::Schema.define(version: 20141117210033) do
     t.datetime "updated_at"
     t.string   "imageurl"
     t.string   "imageattribution"
+    t.string   "fact1"
+    t.string   "fact2"
+    t.string   "fact3"
   end
 
   create_table "projects", force: true do |t|
@@ -80,7 +83,7 @@ ActiveRecord::Schema.define(version: 20141117210033) do
     t.string   "project_title"
     t.string   "organization"
     t.text     "summary"
-    t.string   "picture"
+    t.string   "imageurl"
   end
 
   add_index "projects", ["issue_id"], name: "index_projects_on_issue_id", using: :btree

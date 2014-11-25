@@ -1,49 +1,71 @@
-#jumbo {
+html {
+	background-color: white;
+}
+
+
+.jumbotron {
 	margin-bottom: 0px;
-    background-position: 0% 25%;
+    background-position: 35% 25%;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
     height: 700px;
+}   
+
+#jumbotron > .container {
+	height: 700px;
+  	line-height: 500px;
+	text-align: center;
 }
 
-#jumbo > .row > #jumbo-text-background {
-	background-color: black;
-	opacity: 0.85;
+
+
+#issue {
+	display: inline-block;
+  	vertical-align: middle;
+  	line-height: normal;
+  	font: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  	color: white;
+  	text-shadow: 2px 2px #000000; 
+}
+
+#jumbo-text-background {
+	background-color: white;
+	opacity: 1;
 	height: auto;
  	background: absolute;
-  	left: 275px;
-  	right: 20px;
-  	position: absolute;
-  	top: 10px;
 }
 
-#jumbo > .row > #jumbo-text-background > #jumbo-text > .issue {
+#jumbo-text-background > #jumbo-text {
+	text-align: center;
+}
+
+#jumbo-text-background > #jumbo-text > .issue {
 	font: 12px Arial;
 	font-style: bold;
 	color: orange;
 }
 
-#jumbo > .row > #jumbo-text-background > #jumbo-text > .title {
-	font-family: Impact; 
-	font-size: 24px;
-	color: white;
+#jumbo-text-background > #jumbo-text > .title {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-size: 42px;
+	color: black;
 }
 
-#jumbo > .row > #jumbo-text-background > #jumbo-text > .publication {
-	font-family: Times;
-	font-size: 12px;
+#jumbo-text-background > #jumbo-text > .publication {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-size: 14px;
 	color: grey;
 }
 
-#jumbo > .row > #jumbo-text-background > #jumbo-text > .article-text {
-	font-family: Arial;
-	font-size: 14px;
+#jumbo-text-background > #jumbo-text > .article-text {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-size: 24px;
 }
 
-#jumbo > .row > #jumbo-text-background > #jumbo-text > .article-date {
-	font-family: Arial;
+#jumbo-text-background > #jumbo-text > .article-date {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	font-size: 10px;
 }
 
@@ -57,12 +79,46 @@
 	font-size: 14px;
 }
 
-#main-page-wrapper {
-	position: absolute;
-	left: 275px;
+#projectthumb {
+	max-width: 400px;
 }
 
-#thumb {
-	background-size: 100px 80px;
+#articlethumb {
+	position: center;
+	max-width: 600px;
 }
 
+#issue-project{
+	background-color: black;
+	height: auto;
+ 	background: absolute;
+ 	text-align: center;
+ 	color: white;
+}
+
+#project-text {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+#project-text > h2 {
+	font: "Helvetica Neue";
+	font-size: 38px;
+	color: grey;
+}
+
+#project-title {
+	font: "Helvetica Neue Light";
+	font-size: 26px;
+	color: white;
+}
+
+#project-org {
+	font: "Helvetica Neue Light";
+	font-size: 24px;
+	color: grey;
+}
+
+#project-text {
+	font: "Helvetica Neue Light";
+	font-size: 16px;
+}

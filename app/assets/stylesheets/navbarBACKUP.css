@@ -17,7 +17,6 @@ body {
 }
 
 #homebg img {
-	margin-top: 92px;
 	display: none;
 	position: relative;
 	top: -90;
@@ -31,20 +30,6 @@ body {
 	background: -webkit-linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("japen-red-cross-2.jpg"); no-repeat left center fixed;
 	background: -moz-linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("japen-red-cross-2.jpg"); no-repeat left center fixed;
 	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("japen-red-cross-2.jpg"); no-repeat left center fixed;
-}
-
-#navbar {
-	opacity: .90;
-}
-
-#navbar_items {
-	font: "Helvetica Neue";
-	font-size: 14px;
-}
-
-#ct {
-	color: grey;
-	padding: 15px 15px;
 }
 
 #main_menu {
@@ -87,3 +72,4 @@ body {
 	font-size: 15px;
 	font-weight: bold;
 }
+

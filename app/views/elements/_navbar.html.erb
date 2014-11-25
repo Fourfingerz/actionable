@@ -1,24 +1,129 @@
 <head>
 <link type="text/css" rel="stylesheet" href="/navbar.css">
+    <script type="text/javascript"> 
+      function display_c(){
+        var refresh=1000; // Refresh rate in milli seconds
+        mytime=setTimeout('display_ct()',refresh)
+      }
+
+      function display_ct() {
+        var strcount
+        var x = new Date()
+        var x1=x.getMonth() + "/" + x.getDate() + "/" + x.getFullYear(); 
+        x1 = x1 + " - " +  x.getHours( )+ ":" +  x.getMinutes() + ":" +  x.getSeconds();
+        document.getElementById('ct').innerHTML = x1;
+        tt=display_c();
+      }
+
+       $(document).ready(function(){
+         $(window).bind('scroll', function() {
+         var navHeight = $( window ).height() - 70;
+           if ($(window).scrollTop() > navHeight) {
+             $('nav').addClass('fixed');
+           }
+           else {
+             $('nav').removeClass('fixed');
+           }
+        });
+      });
+
+    </script>
 </head> 
 
-<div id="main_menu" class="ui-widget-content" style="position: fixed; left: 20px; right: 5%; top: 350.296875px;">
-      <nav>
-        <ul class="main">
 
-          <li>
-            <%= link_to '/Actionable®', :root %>
-          </li>
 
-          <% Issue.all.each do |c| %>
-            <li class="snavitem <%= is_active?(issue_path(c)) %>">
-            <%= link_to "" + c.topic, issue_path(c) %>
-          <% end %>
-            </li>
-          <li>
-            <a href="javascript:;">/get in touch</a>
-          </li>
+<body onload=display_ct();>
+<header>
+  <div id="navbar" class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
 
-        </ul>
-      </nav>
+      
+
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse navHeaderCollapse">
+          <ul class="nav navbar-nav" id="navbar_items">
+
+                  <li>
+                    <%= link_to '/Actionable®', :root %>
+                  </li>
+
+              <% Issue.all.each do |c| %>
+                  <li class="snavitem <%= is_active?(issue_path(c)) %>">
+                  <%= link_to "" + c.topic, issue_path(c) %>
+                <% end %>
+                  </li>
+
+                <li>
+                 <li id='ct' ></li><!-- Live Clock -->
+                </li>
+          </ul>
+         </div>
+          
+      </div>
+
     </div>
+  </div>
+</header>
+
+
+
+
+  <!-- Bootstrap Default Navbar
+  <header class="navbar navbar-inverse navbar-static-top bs-docs-nav" id="top" role="banner">
+    <div class="container">
+
+      <div class="navbar-header">
+        <a href="../" class="navbar-brand">/Actionable®</a>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"></button>
+      </div>
+
+      <nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation" aria-expanded="false" style="height: 1px;">
+
+        <ul class="nav navbar-nav">
+          <% Issue.all.each do |c| %>
+              <li class="snavitem <%= is_active?(issue_path(c)) %>">
+              <%= link_to "" + c.topic, issue_path(c) %>
+            <% end %>
+              </li>
+              <li>
+               <span id='ct' ></span>
+              </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </header>
+  -->
+
+
+
+
+  <!-- old nav sidebar 
+  <div id="main_menu" class="ui-widget-content" style="position: fixed; left: 20px; right: 5%; top: 350.296875px;">
+        <nav>
+          <ul class="main">
+
+            <li>
+              <%= link_to '/Actionable®', :root %>
+            </li>
+           
+
+           
+
+            
+
+          </ul>
+        </nav> 
+
+        
+  </div>
+  -->
+
+
+</body>
