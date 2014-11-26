@@ -1,5 +1,5 @@
 ActiveAdmin.register Fact do
-  permit_params :project_id, :facttext, :factnum, :factsource
+  permit_params :project_id, :facttext, :factnum, :factsource, :facttext2, :factnum2
 
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters

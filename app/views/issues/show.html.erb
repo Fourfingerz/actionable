@@ -9,11 +9,19 @@
 		<% @articlelead = @issue.articles.collect(&:lead) %>
 		<% @articlepublication = @issue.articles.collect(&:publication) %>
 		<% @articledate = @issue.articles.collect(&:published_on) %>
+		
 		<% @projecturl = @issue.projects.collect(&:project_url) %>
 		<% @projecttitle = @issue.projects.collect(&:project_title) %>
 		<% @projectorg = @issue.projects.collect(&:organization) %>
 		<% @projectsumm = @issue.projects.collect(&:summary) %>
 		<% @projectimage = @issue.projects.collect(&:imageurl) %>
+
+		<% @facttext = @issue.facts.collect(&:facttext) %>
+		<% @factnum = @issue.facts.collect(&:factnum) %>
+		<% @facttext2 = @issue.facts.collect(&:facttext2) %>
+		<% @factnum2 = @issue.facts.collect(&:factnum2) %>
+		<% @factsource = @issue.facts.collect(&:factsource) %>
+
 		<style>
 			body > .jumbotron {
 		background-image: url(<%= @issueimage %>); no-repeat left center fixed;
@@ -25,7 +33,7 @@
 
 
  	<body>
-
+ 	<!-- THIS IS THE ISSUE JUMBOTRON -->
 		<div id="jumbotron" class="jumbotron">
 			<div class="container">
 				<h1 id="issue"><%= @issue.topic %></h1>
@@ -34,6 +42,7 @@
 			</div>
 		</div>
 
+	<!-- THIS IS THE ARTICLE SECTION -->
 		<div id="jumbo-text-background" class="col-md-8 col-md-offset-2"><!-- Article Content -->
 					<div id="jumbo-text">
 								</br>
@@ -64,8 +73,27 @@
 								</br>
 					</div>
 				</div>	
+	<!-- THIS IS THE FACTS SECTION -->
+		<div id="project-facts-section" class="col-md-12">
+			<div id="facts-container" class="col-md-3 col-md-offset-3">
+				
+				<% (0..3).each do |i| %>
+				
+					<%= @factnum[i] %>
+					</br>
+					<%= @facttext[i] %>
+					</br>
+					<%= @factnum2[i] %>
+					</br>
+					<%= @facttext2[i] %>
+					</br>
+					
+				<% end %>
 
+			</div>
+		</div>
 
+	<!-- THIS IS THE PROJECT SECTION -->
 		<div id="issue-project" class="col-md-12"><!-- Project Content -->	<div id="container" class="col-md-6 col-md-offset-3">
 				<div id="project-text">
 						</br>

@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 
   resources :issues
   resources :articles
+  resources :projects
+  resources :facts
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
