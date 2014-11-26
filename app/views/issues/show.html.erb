@@ -20,6 +20,7 @@
 			}
 		</style>
 		<link type="text/css" rel="stylesheet" href="/viewpage.css">
+		<link href='http://fonts.googleapis.com/css?family=Titillium+Web:300, 500' rel='stylesheet' type='text/css'>
  	</head>
 
 
@@ -29,16 +30,12 @@
 			<div class="container">
 				<h1 id="issue"><%= @issue.topic %></h1>
 				<h1 id="chevron"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></h1>
+				<p id="photocredit"><%= @issue.imageattribution %></p>
 			</div>
 		</div>
 
-		<div id="jumbo-text-background" class="col-md-10 col-md-offset-1"><!-- Article Content -->
+		<div id="jumbo-text-background" class="col-md-8 col-md-offset-2"><!-- Article Content -->
 					<div id="jumbo-text">
-								</br>
-								</br>
-								</br>
-								</br>
-								</br>
 								</br>
 								<hr color="black" width="100%">
 								<h2>In Recent News</h2>
@@ -46,14 +43,9 @@
 								<hr color="black" width="100%">
 								
 								<!-- ADD .to_date back into @articledate when complete -->
+
 								</br>
-								</br>
-								</br>
-								</br>
-								</br>
-								<img src=<%= @articleimage[0] %> id="articlethumb" >
-								</br>
-								</br>
+								<img src=<%= @articleimage[0] %> id="articlethumb" class="img-thumbnail">
 								</br>
 								</br>
 								<p class="article-text"><%= @articlelead[0] %></p>
@@ -64,34 +56,44 @@
 								<%= @articlepublication[0] %>  
 								</h3>
 								<p class="article-date"><%= @articledate[0] %></p>
-						
-
+								</br>
+								</br>
+								<a href="<%= @articleurl[0] %>" class="btn btn-success btn-lg" id="articlebutton">Read More Of This Article On <%= @issue.topic %></a>
+								</br>
+								</br>
+								</br>
 					</div>
 				</div>	
 
 
 		<div id="issue-project" class="col-md-12"><!-- Project Content -->	<div id="container" class="col-md-6 col-md-offset-3">
-					<div id="project-text">
-					</br>
-					</br>
-					</br>
-					</br>
+				<div id="project-text">
+						</br>
+						</br>
+						</br>
+						</br>
 						
-						<h2> Become Actionable Today</h2>
-						</br>
-						</br>
+						<h2 id="actionable-today"> Become Actionable Today</h2>
+						<hr color="black" width="100%">
 						</br>
 						</br>
 						<a href="<%= @projecturl[0] %>" id="project-title"><%= @projecttitle[0] %></a>
 						</br>
 						</br>
-						<img src=<%= @projectimage[0] %> id="projectthumb">
+						<img src=<%= @projectimage[0] %> id="projectthumb" class="img-circle">
 						</br>
 						<h3 id="project-org"<%= @projectorg[0] %>></h3>
 						</br>
 						<p id="project-text"><%= @projectsumm[0] %></p>
-					</div>
+						</br>
+						</br>
+						<a href="<%= @projecturl[0] %>" class="btn btn-danger btn-lg">Take Action</a>
+						</br>
+						</br>
 				</div>
 			</div>
+		</div>
+
+
 	</body>
 </html>

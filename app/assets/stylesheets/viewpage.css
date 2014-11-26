@@ -1,5 +1,5 @@
 html {
-	background-color: white;
+	background-color: #666666;
 }
 
 
@@ -19,22 +19,31 @@ html {
 	text-align: center;
 }
 
-
+#photocredit {
+	display: inline-block;
+	color: white;
+	vertical-align: middle;
+}
 
 #issue {
 	display: inline-block;
   	vertical-align: middle;
   	line-height: normal;
-  	font: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  	font-family: 'Titillium Web', Helvetica, sans-serif;
   	color: white;
-  	text-shadow: 2px 2px #000000; 
+  	text-shadow: 3px 3px #000000; 
+  	font-weight: 500;
 }
 
 #jumbo-text-background {
-	background-color: white;
+	background-color: #666666;
 	opacity: 1;
 	height: auto;
  	background: absolute;
+}
+
+#jumbo-text > h2 {
+	color: #999999;
 }
 
 #jumbo-text-background > #jumbo-text {
@@ -42,41 +51,45 @@ html {
 }
 
 #jumbo-text-background > #jumbo-text > .issue {
-	font: 12px Arial;
+	font-family: 'Titillium Web', Helvetica, sans-serif;
 	font-style: bold;
 	color: orange;
 }
 
 #jumbo-text-background > #jumbo-text > .title {
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-family: 'Titillium Web', Helvetica, sans-serif; 
 	font-size: 42px;
-	color: black;
+	color: white;
 }
 
 #jumbo-text-background > #jumbo-text > .publication {
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-family: 'Titillium Web', Helvetica, sans-serif; 
 	font-size: 14px;
-	color: grey;
+	color: black;
 }
 
 #jumbo-text-background > #jumbo-text > .article-text {
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-family: 'Titillium Web', Helvetica, sans-serif; 
 	font-size: 24px;
+	color: white;
 }
 
 #jumbo-text-background > #jumbo-text > .article-date {
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-family: 'Titillium Web', Helvetica, sans-serif; 
 	font-size: 10px;
+	color: grey;
 }
 
 #article-text {
-	font-family: Georgia;
+	font-family: 'Titillium Web', Helvetica, sans-serif;
 	font-size: 12px;
+	font-weight: 400;
 }
 
 #article-date {
-	font-family: Georgia;
+	font-family: 'Titillium Web', Helvetica, sans-serif;
 	font-size: 14px;
+	color: black;
 }
 
 #projectthumb {
@@ -88,8 +101,24 @@ html {
 	max-width: 600px;
 }
 
-#issue-project{
+#articlebutton {
+	font-family: 'Titillium Web', Helvetica, sans-serif;
+}
+
+#actionable-background {
 	background-color: black;
+	height: 200px;
+	text-align: center;
+}
+
+#actionable-today {
+	font-family: 'Titillium Web', Helvetica, sans-serif;
+	font-size: 52px;
+	color: grey;
+}
+
+#issue-project{
+	background-color: #333333;
 	height: auto;
  	background: absolute;
  	text-align: center;
@@ -97,28 +126,23 @@ html {
 }
 
 #project-text {
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-family: 'Titillium Web', Helvetica, sans-serif;
 }
 
-#project-text > h2 {
-	font: "Helvetica Neue";
-	font-size: 38px;
-	color: grey;
-}
 
 #project-title {
-	font: "Helvetica Neue Light";
-	font-size: 26px;
+	font-family: 'Titillium Web', Helvetica, sans-serif;
+	font-size: 36px;
 	color: white;
 }
 
 #project-org {
-	font: "Helvetica Neue Light";
+	font-family: 'Titillium Web', Helvetica, sans-serif;
 	font-size: 24px;
-	color: grey;
+	color: white;
 }
 
 #project-text {
-	font: "Helvetica Neue Light";
-	font-size: 16px;
+	font-family: 'Titillium Web', Helvetica, sans-serif;
+	font-size: 24px;
 }

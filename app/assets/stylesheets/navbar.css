@@ -1,5 +1,10 @@
-body {
-	font-family: Arial, Helvetica, sans-serif;
+html {
+	  	font-family: 'Titillium Web', Helvetica, sans-serif;
+}
+
+#navlogo {
+	font-size: 16px;
+	color: white;
 }
 
 #homebg {
@@ -18,7 +23,6 @@ body {
 
 #homebg img {
 	margin-top: 92px;
-	display: none;
 	position: relative;
 	top: -90;
 	left: 0;
@@ -34,11 +38,11 @@ body {
 }
 
 #navbar {
-	opacity: .90;
+	opacity: .95;
 }
 
 #navbar_items {
-	font: "Helvetica Neue";
+	font-family: 'Titillium Web', Helvetica, sans-serif;
 	font-size: 14px;
 }
 
