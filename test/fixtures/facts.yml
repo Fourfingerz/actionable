@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  facttext: MyString
+  factnum: MyString
+  factsource: MyString
+
+two:
+  facttext: MyString
+  factnum: MyString
+  factsource: MyString

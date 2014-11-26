@@ -1,6 +1,5 @@
-ActiveAdmin.register Issue do
-  permit_params :topic, :imageurl, :imageattribution
-
+ActiveAdmin.register Fact do
+  permit_params :project_id, :facttext, :factnum, :factsource
 
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
