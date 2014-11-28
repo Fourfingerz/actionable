@@ -4,25 +4,26 @@ html {
 
 
 .jumbotron {
-	margin-bottom: 0px;
     background-position: 35% 25%;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: white;
-    height: 700px;
+    background-color: #666666;
+    height: 900px;
 }   
 
 #jumbotron > .container {
-	height: 700px;
-  	line-height: 500px;
+	height: 900px;
+  	line-height: 700px;
 	text-align: center;
 }
 
+
 #photocredit {
-	display: inline-block;
-	color: white;
-	vertical-align: middle;
+	font-family: 'Titillium Web', Helvetica, sans-serif;
+	font-size: 12px;
+	color: grey;
+	text-align: right;
 }
 
 #issue {
@@ -43,7 +44,7 @@ html {
 }
 
 #jumbo-text > h2 {
-	color: #999999;
+	color: #CCCCCC;
 }
 
 #jumbo-text-background > #jumbo-text {
@@ -117,12 +118,82 @@ html {
 	color: grey;
 }
 
-#issue-project{
+
+
+
+#project-facts-section {
+	background-color: #666666;
+	height: auto;
+}
+
+#facts-container {
+	background-color: white;
+	color: black;
+	height: 450px;
+	border-style: outset;
+    border-width: 5px;
+    border-color: #666666;
+}
+
+#factnum {
+	font-family: 'Rockwell', Helvetica, sans-serif;
+	font-size: 60px;
+	color: orange;
+	font-weight: 700;
+	line-height: 90%;
+}
+
+#facttext {
+	font-family: 'Rockwell', Helvetica, sans-serif;
+	font-size: 20px;
+	color: black;
+	font-weight: 500;
+	line-height: 95%;
+	font-style: bold;
+}
+
+#factnum2 {
+	font-family: 'Rockwell', Helvetica, sans-serif;
+	font-size: 60px;
+	color: orange;
+	font-weight: 700;
+	line-height: 90%;
+}
+
+#facttext2 {
+	font-family: 'Rockwell', Helvetica, sans-serif;
+	font-size: 20px;
+	color: black;
+	font-weight: 500;
+	line-height: 95%;
+	font-style: bold;
+}
+
+#factsource {
+	font-family: 'Rockwell', Helvetica, sans-serif;
+	font-size: 10px;
+	color: black;
+}
+
+#project-padding {
+	height: 100px;
+	background-color: #666666;
+}
+
+
+
+#issue-project {
 	background-color: #333333;
 	height: auto;
  	background: absolute;
  	text-align: center;
  	color: white;
+}
+
+#projecttype {
+	font-family: 'Titillium Web', Helvetica, sans-serif;
+	font-size: 28px;
+	color: grey;
 }
 
 #project-text {
@@ -139,7 +210,7 @@ html {
 #project-org {
 	font-family: 'Titillium Web', Helvetica, sans-serif;
 	font-size: 24px;
-	color: white;
+	color: grey;
 }
 
 #project-text {
@@ -149,4 +220,35 @@ html {
 
 #projectbutton {
 	font-size: 28px;
+}
+
+
+#foot {
+	background-color: #222222;
+	height: 325px;
+}
+
+#padding {
+	height: 50px;
+}
+
+#quote {
+	font-family: 'Rockwell', Helvetica, sans-serif;
+	font-size: 24px;
+	color: grey;
+	text-align: center;
+}
+
+#foot-logo {
+	font-family: 'Titillium Web', Helvetica, sans-serif;
+	font-size: 16px;
+	color: #333333;
+	text-align: center;
+}
+
+#foot-contact {
+	font-family: 'Titillium Web', Helvetica, sans-serif;
+	font-size: 18px;
+	color: #333333;
+	text-align: center;
 }

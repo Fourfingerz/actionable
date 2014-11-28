@@ -1,116 +1,102 @@
 <html>
 	<head> 
-		<% @issueimage = @issue.imageurl %>
-		<% @articletitle = @issue.articles.collect(&:title) %>
-		<% @articleurl = @issue.articles.collect(&:article_url) %>
-		<% @articletitle = @issue.articles.collect(&:title) %>
-		<% @articleimage = @issue.articles.collect(&:imageurl) %>
-		<% @articleauthor = @issue.articles.collect(&:author) %>
-		<% @articlelead = @issue.articles.collect(&:lead) %>
-		<% @articlepublication = @issue.articles.collect(&:publication) %>
-		<% @articledate = @issue.articles.collect(&:published_on) %>
-		
-		<% @projecturl = @issue.projects.collect(&:project_url) %>
-		<% @projecttitle = @issue.projects.collect(&:project_title) %>
-		<% @projectorg = @issue.projects.collect(&:organization) %>
-		<% @projectsumm = @issue.projects.collect(&:summary) %>
-		<% @projectimage = @issue.projects.collect(&:imageurl) %>
-
-		<% @facttext = @issue.facts.collect(&:facttext) %>
-		<% @factnum = @issue.facts.collect(&:factnum) %>
-		<% @facttext2 = @issue.facts.collect(&:facttext2) %>
-		<% @factnum2 = @issue.facts.collect(&:factnum2) %>
-		<% @factsource = @issue.facts.collect(&:factsource) %>
-
 		<style>
 			body > .jumbotron {
 		background-image: url(<%= @issueimage %>); no-repeat left center fixed;
 			}
 		</style>
+
 		<link type="text/css" rel="stylesheet" href="/viewpage.css">
-		<link href='http://fonts.googleapis.com/css?family=Titillium+Web:300, 500' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Titillium+Web:300, 500' rel='stylesheet' type='text/css'><link href='http://fonts.googleapis.com/css?family=Rockwell' rel='stylesheet' type='text/css'>
  	</head>
 
 
  	<body>
- 	<!-- THIS IS THE ISSUE JUMBOTRON -->
+ 				<!-- THIS IS THE ISSUE JUMBOTRON -->
 		<div id="jumbotron" class="jumbotron">
 			<div class="container">
 				<h1 id="issue"><%= @issue.topic %></h1>
 				<h1 id="chevron"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></h1>
-				<p id="photocredit"><%= @issue.imageattribution %></p>
+				<h3 id="photocredit">Photo Credit: <%= @issue.imageattribution %></h3>
 			</div>
 		</div>
 
-	<!-- THIS IS THE ARTICLE SECTION -->
+				<!-- THIS IS THE ARTICLE SECTION -->
 		<div id="jumbo-text-background" class="col-md-8 col-md-offset-2"><!-- Article Content -->
-					<div id="jumbo-text">
-								</br>
-								<hr color="black" width="100%">
-								<h2>In Recent News</h2>
-								<a href="<%= @articleurl[0] %>" class="title" ><%= @articletitle[0] %></a>
-								<hr color="black" width="100%">
-								
-								<!-- ADD .to_date back into @articledate when complete -->
+			<div id="jumbo-text">
+				</br>
+				<hr color="black" width="100%">
+				<h2>In Recent News</h2>
+				<a href="<%= @articleurl[0] %>" class="title" ><%= @articletitle[0] %></a>
+				<hr color="black" width="100%">
 
-								</br>
-								<img src=<%= @articleimage[0] %> id="articlethumb" class="img-thumbnail">
-								</br>
-								</br>
-								<p class="article-text"><%= @articlelead[0] %></p>
-								</br>
-								</br>
-								<h3 class="publication">by 
-								<%= @articleauthor[0] %> of 
-								<%= @articlepublication[0] %>  
-								</h3>
-								<p class="article-date"><%= @articledate[0] %></p>
-								</br>
-								</br>
-								<a href="<%= @articleurl[0] %>" class="btn btn-success btn-lg" id="articlebutton">Read More Of This Article On <%= @issue.topic %></a>
-								</br>
-								</br>
-								</br>
-					</div>
-				</div>	
-	<!-- THIS IS THE FACTS SECTION -->
+				<!-- ADD .to_date back into @articledate when complete -->
+
+				</br>
+				<img src=<%= @articleimage[0] %> id="articlethumb" class="img-thumbnail">
+				</br>
+				</br>
+				<p class="article-text"><%= @articlelead[0] %></p>
+				</br>
+				</br>
+				<h3 class="publication">by 
+				<%= @articleauthor[0] %> of 
+				<%= @articlepublication[0] %>  
+				</h3>
+				<p class="article-date"><%= @articledate[0] %></p>
+				</br>
+				<a href="<%= @articleurl[0] %>" class="btn btn-success btn-lg" id="articlebutton">Read More Of This Article On <%= @issue.topic %></a>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+			</div>
+		</div>	
+
+						<!-- THIS IS THE FACTS SECTION -->
 		<div id="project-facts-section" class="col-md-12">
-			<div id="facts-container" class="col-md-3 col-md-offset-3">
-				
-				<% (0..3).each do |i| %>
-				
-					<%= @factnum[i] %>
-					</br>
-					<%= @facttext[i] %>
-					</br>
-					<%= @factnum2[i] %>
-					</br>
-					<%= @facttext2[i] %>
-					</br>
-					
-				<% end %>
-
+			<div class="row">
+				<div class="col-md-9 col-md-offset-1">	
+					<% (0..2).each do |i| %>
+						<div id="facts-container" class="col-md-3 col-md-offset-1">
+							</br>
+							<span id="factnum"><%= @factnum[i] %></span>
+							</br>
+							<span id="facttext"><%= @facttext[i] %></span>
+							</br>
+							<span id="factnum2"><%= @factnum2[i] %></span>
+							</br>
+							<span id="facttext2"><%= @facttext2[i] %></span>
+							</br>
+							<span id="factsource">Source: <%= @factsource[i] %></span>
+						</div>
+					<% end %>
+				</div>
 			</div>
 		</div>
+						<!-- PADDING -->
+		<div id="project-padding" class="col-md-12">
+		</div>
 
-	<!-- THIS IS THE PROJECT SECTION -->
-		<div id="issue-project" class="col-md-12"><!-- Project Content -->	<div id="container" class="col-md-6 col-md-offset-3">
+						<!-- THIS IS THE PROJECT SECTION -->
+		<div id="issue-project" class="col-md-12">
+			<div id="container" class="col-md-6 col-md-offset-3">
 				<div id="project-text">
 						</br>
 						</br>
-						</br>
-						</br>
 						
-						<h2 id="actionable-today"> Become Actionable Today</h2>
+						<h2 id="actionable-today"> This Week's Action</h2>
 						<hr color="black" width="100%">
 						</br>
-						</br>
+						<h3 id="projecttype"><%= @projecttype[0] %></h3>
 						<a href="<%= @projecturl[0] %>" id="project-title"><%= @projecttitle[0] %></a>
 						</br>
 						</br>
 						<img src=<%= @projectimage[0] %> id="projectthumb" class="img-circle">
 						</br>
-						<h3 id="project-org"<%= @projectorg[0] %>></h3>
+						<h3 id="project-org"><%= @projectorg[0] %></h3>
 						</br>
 						<p id="project-text"><%= @projectsumm[0] %></p>
 						</br>
@@ -118,10 +104,26 @@
 						<a href="<%= @projecturl[0] %>" class="btn btn-danger btn-lg" id="projectbutton">Take Action</a>
 						</br>
 						</br>
+						</br>
+						</br>
+						</br>
+						</br>
 				</div>
 			</div>
 		</div>
 
-
+						<!-- THIS IS THE FOOTER -->
+		
+			<div id="foot" class="col-md-12">
+				<div id="padding" class="col-md-12"></div>
+				
+				<h2 id="quote">"All that is necessary for the triumph of evil is that good men do nothing."</h2>
+				<h2 id="quote"> -Edmund Burke</h2>
+				</br>
+				</br>
+				<p id="foot-contact"><a href="mailto:chansd5@gmail.com?Subject=Hello%20Actionable" target="_top">Get In Touch</a></p>
+				<p id="foot-logo">/Actionable. 2015.</p>
+			</div>
+		
 	</body>
 </html>

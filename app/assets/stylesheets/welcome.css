@@ -1,0 +1,44 @@
+.jumbotron {
+	background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("http://i.imgur.com/IprJIhQ.jpg"); no-repeat left center fixed;
+    background-position: 35% -1%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #222222;
+    height: 900px;
+}   
+
+#jumbotron > .container {
+	height: 900px;
+	text-align: center;
+
+}
+
+#logo {
+	font-family: 'Titillium Web', Helvetica, sans-serif; 
+	font-size: 56px;
+	color: white;
+	text-align: right;
+	text-shadow: 3px 3px #000000; 
+}
+
+#intro {
+	font-family: 'Rockwell', sans-serif; 
+	font-size: 18px;
+	color: white;
+	text-align: right;
+}
+
+#intro2 {
+	font-family: 'Rockwell', sans-serif;
+	font-size: 28px;
+	color: white;
+	text-align: right;
+}
+
+#introp {
+	font-family: 'Rockwell', sans-serif;
+	font-size: 18px;
+	color: white;
+	text-align: right;
+}

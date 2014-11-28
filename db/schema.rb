@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141126190921) do
+ActiveRecord::Schema.define(version: 20141127195931) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -92,6 +92,7 @@ ActiveRecord::Schema.define(version: 20141126190921) do
     t.string   "organization"
     t.text     "summary"
     t.string   "imageurl"
+    t.string   "projecttype"
   end
 
   add_index "projects", ["issue_id"], name: "index_projects_on_issue_id", using: :btree

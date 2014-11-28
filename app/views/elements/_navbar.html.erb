@@ -1,17 +1,12 @@
 <head>
-<link href='http://fonts.googleapis.com/css?family=Titillium+Web:300,500' rel='stylesheet' type='text/css'>
-<link type="text/css" rel="stylesheet" href="/navbar.css">
+  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:300,500' rel='stylesheet' type='text/css'>
+  <link type="text/css" rel="stylesheet" href="/navbar.css">
 </head> 
 
-
-
 <body>
-<header>
-  <div id="navbar" class="navbar navbar-inverse navbar-static-top">
-    <div class="container">
-
-      
-
+  <header>
+    <div id="navbar" class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
         <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -21,80 +16,24 @@
         <div class="collapse navbar-collapse navHeaderCollapse">
           <ul class="nav navbar-nav navbar-left" id="navbar_items">
 
-                  <li id="navlogo">
-                    <a class="navbar-brand" "<%= link_to '/Actionable:', :root %></a>
-                  </li>
+                <li id="navlogo">
+                  <a class="navbar-brand" "<%= link_to '/Actionable:', :root %></a>
+                </li>
 
-              <% Issue.all.each do |c| %>
-                  <li class="snavitem <%= is_active?(issue_path(c)) %>">
-                  <%= link_to "" + c.topic, issue_path(c) %>
-                <% end %>
-                  </li>
-                  
-               
-          </ul>
-         </div>
-          
+                <% Issue.all.each do |c| %>
+                    <li class="snavitem <%= is_active?(issue_path(c)) %>">
+                    <%= link_to "" + c.topic, issue_path(c) %>
+                  <% end %>
+                    </li>
+                    
+                 
+            </ul>
+           </div>
+            
+        </div>
+
       </div>
-
-    </div>
-  </div>
-</header>
-
-
-
-
-  <!-- Bootstrap Default Navbar
-  <header class="navbar navbar-inverse navbar-static-top bs-docs-nav" id="top" role="banner">
-    <div class="container">
-
-      <div class="navbar-header">
-        <a href="../" class="navbar-brand">/Actionable®</a>
-        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"></button>
-      </div>
-
-      <nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation" aria-expanded="false" style="height: 1px;">
-
-        <ul class="nav navbar-nav">
-          <% Issue.all.each do |c| %>
-              <li class="snavitem <%= is_active?(issue_path(c)) %>">
-              <%= link_to "" + c.topic, issue_path(c) %>
-            <% end %>
-              </li>
-              <li>
-               <span id='ct' ></span>
-              </li>
-        </ul>
-
-      </nav>
-
     </div>
   </header>
-  -->
-
-
-
-
-  <!-- old nav sidebar 
-  <div id="main_menu" class="ui-widget-content" style="position: fixed; left: 20px; right: 5%; top: 350.296875px;">
-        <nav>
-          <ul class="main">
-
-            <li>
-              <%= link_to '/Actionable®', :root %>
-            </li>
-           
-
-           
-
-            
-
-          </ul>
-        </nav> 
-
-        
-  </div>
-  -->
-
 
 </body>

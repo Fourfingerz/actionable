@@ -1,5 +1,5 @@
 ActiveAdmin.register Project do
-  permit_params :project_url, :issue_id, :project_title, :organization, :summary, :imageurl
+  permit_params :project_url, :issue_id, :project_title, :organization, :summary, :imageurl, :projecttype
 
 
   # See permitted parameters documentation:
