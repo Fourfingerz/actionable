@@ -17,7 +17,7 @@
           <ul class="nav navbar-nav navbar-left" id="navbar_items">
 
                 <li id="navlogo">
-                  <a class="navbar-brand" "<%= link_to '/Actionable:', :root %></a>
+                  <%= link_to '/Actionable:', :root %>
                 </li>
 
                 <% Issue.all.each do |c| %>
@@ -26,7 +26,6 @@
                   <% end %>
                     </li>
                     
-                 
             </ul>
            </div>
             
