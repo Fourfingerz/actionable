@@ -53,3 +53,7 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'devise', github: 'plataformatec/devise'
 gem 'tzinfo-data'
 gem 'validates_formatting_of'
+
+group :production do
+	gem 'rails_12factor'
+end
