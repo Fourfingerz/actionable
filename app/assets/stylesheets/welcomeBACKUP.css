@@ -1,7 +1,3 @@
-// Place all the styles related to the Welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
 .jumbotron {
 	background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("http://i.imgur.com/IprJIhQ.jpg") no-repeat left center fixed;
     background-position: 35% -1%;
