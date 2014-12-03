@@ -1,5 +1,5 @@
 html {
-	  	font-family: 'Titillium Web', Helvetica, sans-serif;
+	font-family: 'Titillium Web', Helvetica, sans-serif;
 }
 
 #navlogo {
@@ -29,12 +29,6 @@ html {
 	background: url("http://i.imgur.com/IprJIhQ.jpg");
 	background-size: contain;
 	background-repeat: no-repeat;
-}
-
-#pagebg img {
-	background: -webkit-linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("japen-red-cross-2.jpg") no-repeat left center fixed;
-	background: -moz-linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("japen-red-cross-2.jpg") no-repeat left center fixed;
-	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("japen-red-cross-2.jpg") no-repeat left center fixed;
 }
 
 #navbar {
