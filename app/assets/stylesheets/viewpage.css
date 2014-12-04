@@ -2,6 +2,10 @@ html {
 	background-color: #666666;
 }
 
+body {
+	font-family: 'Titillium Web', Helvetica, sans-serif;
+}
+
 #jumbotron > .container {
 	height: 900px;
   	line-height: 700px;
