@@ -26,9 +26,6 @@ html {
 	position: relative;
 	top: -90;
 	left: 0;
-	background: url("http://i.imgur.com/IprJIhQ.jpg");
-	background-size: contain;
-	background-repeat: no-repeat;
 }
 
 #navbar {

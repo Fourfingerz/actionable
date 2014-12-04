@@ -2,14 +2,12 @@ html {
 	background-color: #666666;
 }
 
-
 .jumbotron {
     background-position: 35% 25%;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: #666666;
-    height: 900px;
 }   
 
 #jumbotron > .container {
