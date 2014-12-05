@@ -16,7 +16,8 @@ class IssuesController < ApplicationController
 	@articleauthor = @issue.articles.collect(&:author) 
 	@articlelead = @issue.articles.collect(&:lead) 
 	@articlepublication = @issue.articles.collect(&:publication) 
-	@articledate = @issue.articles.collect(&:published_on) 
+	@articledate = @issue.articles.collect(&:published_on)
+	@articleimagecredit = @issue.articles.collect(&:imagecredit) 
 	
 	@projecttype = @issue.projects.collect(&:projecttype)	
 	@projecturl = @issue.projects.collect(&:project_url) 

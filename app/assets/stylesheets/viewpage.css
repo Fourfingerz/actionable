@@ -2,10 +2,6 @@ html {
 	background-color: #666666;
 }
 
-body {
-	font-family: 'Titillium Web', Helvetica, sans-serif;
-}
-
 #jumbotron > .container {
 	height: 900px;
   	line-height: 700px;
@@ -89,6 +85,12 @@ body {
 
 #projectthumb {
 	max-width: 400px;
+}
+
+#article-image-credit {
+	font-size: 14px;
+	color: black;
+	text-align: right;
 }
 
 #articlethumb {
