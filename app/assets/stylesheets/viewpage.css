@@ -1,5 +1,5 @@
 html {
-	background-color: #333333;
+	background-color: #666666;
 }
 
 body {
@@ -41,7 +41,7 @@ body {
 	color: #CCCCCC;
 }
 
-#jumbo-text-background > #jumbo-text {
+#jumbo-text {
 	text-align: center;
 }
 
