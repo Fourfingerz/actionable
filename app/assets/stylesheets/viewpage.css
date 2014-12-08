@@ -84,7 +84,17 @@ html {
 }
 
 #projectthumb {
-	max-width: 100%;
+	max-width: 60%;
+	height: auto;
+	width: auto\9;
+	margin: 0px auto;
+	-webkit-size: cover;
+	-moz-size: cover;
+	-o-size: cover;
+}
+
+#articlethumb {
+	max-width: 40%;
 	height: auto;
 	width: auto\9;
 	margin: 0px auto;
@@ -97,16 +107,6 @@ html {
 	font-size: 14px;
 	color: black;
 	text-align: right;
-}
-
-#articlethumb {
-	max-width: 100%;
-	height: auto;
-	width: auto\9;
-	margin: 0px auto;
-	-webkit-size: cover;
-	-moz-size: cover;
-	-o-size: cover;
 }
 
 #articlebutton {
@@ -130,7 +130,19 @@ html {
 
 #project-facts-section {
 	background-color: #666666;
-	height: auto;
+	
+}
+
+#facts-row {
+	width: 100%;
+	text-align: center;
+}
+
+#fact-columns {
+	display: inline-block;
+	float: none;
+	text-align: left;
+	margin-right: -4px;
 }
 
 #facts-container {
@@ -141,6 +153,8 @@ html {
     border-width: 5px;
     border-color: #666666;
 }
+
+
 
 #factnum {
 	font-family: 'Rockwell', 'Titillium Web', sans-serif;

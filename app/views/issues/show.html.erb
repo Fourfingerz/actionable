@@ -82,13 +82,13 @@
 
 						<!-- THIS IS THE FACTS SECTION -->
 		<div id="project-facts-section" class="col-md-12">
-			<div class="row">
-				<div class="col-md-9 col-md-offset-1">	
+			<div class="row row-centered" id="facts-row">
+				<div class="col-md-7 col-centered" id="fact-columns">	
 					<% (0..2).each do |i| %>
 						<% if @facttext[i] == nil %>
 							</br> 
 						<% else %>
-						<div id="facts-container" class="col-md-3 col-md-offset-1">
+						<div id="facts-container" class="col-md-4">
 							</br>
 							<span id="factnum"><%= @factnum[i] %></span>
 							</br>
@@ -111,7 +111,7 @@
 
 						<!-- THIS IS THE PROJECT SECTION -->
 		<div id="issue-project" class="col-md-12">
-			<div id="container" class="col-md-6 col-md-offset-3">
+			<div id="container" class="col-md-12">
 				<div id="project-text">
 						</br>
 						</br>
