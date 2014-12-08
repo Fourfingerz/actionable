@@ -91,7 +91,8 @@ html {
 	color: black;
 }
 
-#projectthumb {
+
+#articlethumb {
 	max-width: 100%;
 	height: auto;
 	width: auto;
@@ -100,8 +101,7 @@ html {
 	-moz-size: cover;
 	-o-size: cover;
 }
-
-#articlethumb {
+#projectthumb {
 	max-width: 50%;
 	height: auto;
 	width: auto;
@@ -110,6 +110,8 @@ html {
 	-moz-size: cover;
 	-o-size: cover;
 }
+
+
 
 #article-image-credit {
 	font-size: 14px;
