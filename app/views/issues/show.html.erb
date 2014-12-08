@@ -8,6 +8,13 @@
 		    background-repeat: no-repeat;
 		    background-attachment: fixed;
 		    background-color: #666666;
+		    
+			top: 0; 
+			left: 0; 
+
+			/* Preserve aspet ratio */
+			min-width: 100%;
+			min-height: 100%;
 		}
 		</style>
 
@@ -61,7 +68,7 @@
 				<%= @articleauthor[0] %> of 
 				<%= @articlepublication[0] %>  
 				</h3>
-				<p class="article-date"><%= @articledate[0] %></p>
+				<p class="article-date"><%= @articledate[0].to_date %></p>
 				</br>
 				<a href="<%= @articleurl[0] %>" class="btn btn-success btn-lg" id="articlebutton">Read More Of This Article On <%= @issue.topic %></a>
 				</br>
