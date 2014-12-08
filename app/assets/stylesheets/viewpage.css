@@ -94,7 +94,7 @@ html {
 #projectthumb {
 	max-width: 100%;
 	height: auto;
-	width: auto\9;
+	width: auto;
 	margin: 0px auto;
 	-webkit-size: cover;
 	-moz-size: cover;
@@ -104,7 +104,7 @@ html {
 #articlethumb {
 	max-width: 50%;
 	height: auto;
-	width: auto\9;
+	width: auto;
 	margin: 0px auto;
 	-webkit-size: cover;
 	-moz-size: cover;
