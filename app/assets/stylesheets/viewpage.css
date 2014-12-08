@@ -84,7 +84,8 @@ html {
 }
 
 #projectthumb {
-	max-width: 400px;
+	max-width: 350px;
+	margin: 0px auto;
 }
 
 #article-image-credit {
@@ -94,8 +95,8 @@ html {
 }
 
 #articlethumb {
-	position: center;
 	max-width: 600px;
+	margin: 0px auto;
 }
 
 #articlebutton {
