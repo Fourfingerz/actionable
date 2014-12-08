@@ -84,7 +84,7 @@ html {
 }
 
 #projectthumb {
-	max-width: 60%;
+	max-width: 100%;
 	height: auto;
 	width: auto\9;
 	margin: 0px auto;
@@ -94,7 +94,7 @@ html {
 }
 
 #articlethumb {
-	max-width: 40%;
+	max-width: 75%;
 	height: auto;
 	width: auto\9;
 	margin: 0px auto;
