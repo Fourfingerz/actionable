@@ -102,7 +102,7 @@ html {
 	-o-size: cover;
 }
 #projectthumb {
-	max-width: 50%;
+	max-width: 75%;
 	height: auto;
 	width: auto;
 	margin: 0px auto;
