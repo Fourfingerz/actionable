@@ -139,7 +139,7 @@ html {
 }
 
 #factnum {
-	font-family: 'Rockwell', Helvetica, sans-serif;
+	font-family: 'Rockwell', 'Titillium Web', sans-serif;
 	font-size: 60px;
 	color: orange;
 	font-weight: 700;
@@ -147,7 +147,7 @@ html {
 }
 
 #facttext {
-	font-family: 'Rockwell', Helvetica, sans-serif;
+	font-family: 'Rockwell', 'Titillium Web', sans-serif;
 	font-size: 20px;
 	color: black;
 	font-weight: 500;
@@ -156,7 +156,7 @@ html {
 }
 
 #factnum2 {
-	font-family: 'Rockwell', Helvetica, sans-serif;
+	font-family: 'Rockwell', 'Titillium Web', sans-serif;
 	font-size: 60px;
 	color: orange;
 	font-weight: 700;
@@ -164,7 +164,7 @@ html {
 }
 
 #facttext2 {
-	font-family: 'Rockwell', Helvetica, sans-serif;
+	font-family: 'Rockwell', 'Titillium Web', sans-serif;
 	font-size: 20px;
 	color: black;
 	font-weight: 500;
@@ -173,7 +173,7 @@ html {
 }
 
 #factsource {
-	font-family: 'Rockwell', Helvetica, sans-serif;
+	font-family: 'Rockwell', 'Titillium Web', sans-serif;
 	font-size: 10px;
 	color: black;
 }
@@ -236,7 +236,7 @@ html {
 }
 
 #quote {
-	font-family: 'Rockwell', Helvetica, sans-serif;
+	font-family: 'Rockwell', 'Titillium Web', sans-serif;
 	font-size: 24px;
 	color: grey;
 	text-align: center;
