@@ -84,7 +84,9 @@ html {
 }
 
 #projectthumb {
-	max-width: 350px;
+	max-width: 100%;
+	height: auto;
+	width: auto\9;
 	margin: 0px auto;
 	-webkit-size: cover;
 	-moz-size: cover;
@@ -98,7 +100,9 @@ html {
 }
 
 #articlethumb {
-	max-width: 600px;
+	max-width: 100%;
+	height: auto;
+	width: auto\9;
 	margin: 0px auto;
 	-webkit-size: cover;
 	-moz-size: cover;
